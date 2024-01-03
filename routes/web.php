@@ -18,7 +18,7 @@ use App\Http\Controllers\TransaksiController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard/index');
 });
 
 Route::get('/dashboard', function () {
@@ -27,7 +27,7 @@ Route::get('/dashboard', function () {
 
 // Route::get('/getTiket', function (Request $request) {
 //     $data = Tiket::all();
-//     return 
+//     return
 // });
 Route::get('/tiket', function () {
     return view('master.tiket.index', [
